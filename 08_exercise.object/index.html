@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>CHECK THE OBJECT CONSOLE !!</h2>
+ <script src="./main.js"></script>
+</body>
+</html>
+  onst likeProduct = (id,deviceName) => {
+    for( let product of products){
+      if(product.likes.indexOf(id) === -1 && product.name === deviceName){
+        product.likes.push(id)
+        return products
+      }  }
+      if(product.likes.indexOf(id) !== -1 && product.name == deviceName){
+        product.likes.splice(product.likes.indexOf(id),1)
+        return products
+      }
+    }
+console.log(likeProduct("fg12ay","Laptop"))
