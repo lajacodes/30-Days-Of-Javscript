@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listner</title>
+</head>
+   
+<body>
+
+      <script>
+
+
+        //  utility
+function isPrimeNo (x) {
+      if (x === 0 || x === 1) return false
+      for (i = x - 1; i > 1; i--) {
+        if (x % i === 0) return false
+      }
+      return true
+    }
+
+    const colors = {
+      red: '#fd5e53',
+      yellow: '#fddb3a',
+      green: '#21bf73'
+    }
+
+               const bodyEl = document.querySelector('body')
+               bodyEl.style.fontFamily = 'Avenir, Segoe ui, Ubuntu, Sans-serif'
+    
+              const numberEl = document.createElement('h1')
+              bodyEl.appendChild(numberEl)
+              const thirty2 = document.createElement('span')
+              bodyEl.appendChild(thirty2)
+              const authorEl = document.createElement('div')
+              bodyEl.appendChild(authorEl)
+              const constEl = document.createElement('input')
+              bodyEl.appendChild(constEl)
+              const buttonEl = document.createElement('button')
+              bodyEl.appendChild(buttonEl)
+              const erroEl = document.createElement('div')
+              constEl.appendChild(erroEl)
+            //    erroEl.document.setAttribute('id', 'cont') 
+
+
+
+
+
+
+
+
+             //   stylings
+               numberEl.textContent = 'Number Generator'
+               numberEl.style.color = 'green'
+               numberEl.style.margin = 'auto'
+               numberEl.style.display = 'flex'
+
+               numberEl.style.justifyContent = 'center'
+
+
+               thirty2.textContent = '30DaysOfJavaScript:DOM Day 3'
+               thirty2.style.marginTop = '-1.5rem'
+               thirty2.style.fontSize = '21px'
+               thirty2.style.display = 'flex'
+                thirty2.style.margin = 'auto'
+               thirty2.style.justifyContent = 'center'
+
+               authorEl.textContent = 'Author: Asabenah Yetayeh'
+               authorEl.style.justifyContent = 'center'
+               authorEl.style.display = 'flex'
+               authorEl.style.margin = 'auto'
+
+
+               constEl.placeholder = '  Generate more numbers...'
+               constEl.type = 'text'
+                constEl.style.marginTop = '2.3rem'
+               constEl.style.width = '35rem'
+               constEl.style.height = '2rem'
+               constEl.style.outline = 'none'
+               constEl.style.border =  '2px solid green'
+                constEl.style.marginLeft = '31.5rem'
+            
+
+               buttonEl.textContent = ' Generate numbers'
+               buttonEl.style.display = 'flex'
+               buttonEl.style.height = '2.3rem'
+               buttonEl.style.placeItems = 'center'
+               buttonEl.style.marginLeft = '68rem'
+               buttonEl.style.marginTop = '-2.3rem'
+               buttonEl.style.outline = 'none'
+               buttonEl.style.border = 'none'
+               buttonEl.style.color = 'white'
+               buttonEl.style.backgroundColor = 'green'
+
+
+
+
+        
+   
+        const contEl = document.createElement('div')
+        contEl.setAttribute('id', 'container')
+        contEl.style.display = 'grid'
+        contEl.style.gridTemplateColumns = 'repeat(6, 1fr)';
+         contEl.style.maxWidth = '55rem';
+        contEl.style.margin = 'auto';
+        contEl.style.gridGap = '5px'; 
+        contEl.style.marginTop  = '2rem'
+
+
+        bodyEl.appendChild(contEl)
+    
+
+
+        // stylings
+        const generateNums = (max = 20) => {
+
+           contEl.innerHTML = ''
+               Array.from(Array(max).keys()).forEach(num => {
+        const numEl = document.createElement('div')
+        numEl.textContent = num
+        numEl.style.height = '5rem'
+        numEl.style.display = 'grid'
+        numEl.style.placeItems = 'center'
+        numEl.style.color = 'white'
+        numEl.style.fontSize = '1.5rem'
+        numEl.style.fontWeight = 600
+        numEl.style.backgroundColor = isPrimeNo(num)
+        ? colors.red
+        : num % 2 ? colors.yellow : colors.green
+      numEl.textContent = num
+      contEl.appendChild(numEl)
+    })
+
+
+    }
+    generateNums();
+
+
+    document.querySelector('button').addEventListener('click', () => {
+        const max = parseInt(document.querySelector('input').value.trim());
+        if (!max) {
+        errorEl.textContent = 'No value entered, input a Number to Generate';
+        errorEl.style.color = 'red'
+        setTimeout(() => {
+          erroEl.textContent = '';
+        }, 4000);
+        return;
+     }
+      if (isNaN(max)) {
+        erroEl.textContent = 'invalid input, Enter  a number';
+        erroEl.style.color = 'purple';
+        setTimeout(() => {
+          erroEl.textContent = '';
+        }, 4000);
+        return;
+      }
+        generateNums(max);
+      });
+
+
+      </script>
+
+
+
+   
+
+</body>
+</html>
