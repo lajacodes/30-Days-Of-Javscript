@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const bodyEl = document.querySelector('body')
+    const worEl = document.createElement('h2')
+    bodyEl.appendChild(worEl)
+    const keywordsEl = document.createElement('div')
+    bodyEl.appendChild(keywordsEl)
+    const secEl = document.createElement('div')
+    bodyEl.appendChild(secEl)
+
+
+    //   styligns
+    bodyEl.style.fontFamily = 'Avenir, Segoe ui, Ubuntu, Sans-serif'
+    keywordsEl.style.maxWidth = '45rem'
+    keywordsEl.style.justifyContent = 'center'
+    keywordsEl.style.margin = 'auto'
+    keywordsEl.style.display = 'flex'
+    keywordsEl.style.flexWrap = 'wrap'
+    keywordsEl.style.fontWeight = '500'
+    keywordsEl.style.gridGap = '2px'
+    keywordsEl.style.placeItems = 'center'
+
+    worEl.textContent = 'keywords'
+    worEl.style.margin = 'auto'
+    worEl.style.display = 'flex'
+    worEl.style.justifyContent = 'center'
+    worEl.style.marginLeft = '-34rem'
+
+
+
+
+
+    const keywords = [{
+        name: ' HTML',
+        color: 'brown'
+      },
+      {
+        name: 'HTML5',
+        color: 'green'
+      },
+      {
+        name: '# CSS',
+        color: 'yellow'
+      },
+      {
+        name: '# CSS3',
+        color: 'brown'
+      },
+      {
+        name: '# JS',
+        color: 'green'
+      },
+      {
+        name: '# javaScript',
+        color: 'red'
+      },
+      {
+        name: '# ES6',
+        color: 'brown'
+      },
+      {
+        name: '# Promise',
+        color: 'green'
+      },
+      {
+        name: '# async await',
+        color: 'red'
+      },
+      {
+        name: '# Database',
+        color: 'brown'
+      },
+      {
+        name: '# React',
+        color: 'green'
+      },
+      {
+        name: '# React Hooks',
+        color: 'red'
+      },
+      {
+        name: '# Context Api',
+        color: 'brown'
+      },
+      {
+        name: '# React Router',
+        color: 'green'
+      },
+      {
+        name: '# REdux',
+        color: 'red'
+      },
+      {
+        name: '# Node',
+        color: 'brown'
+      },
+      {
+        name: '# MongoDB',
+        color: 'green'
+      },
+      {
+        name: '# SQL',
+        color: 'red'
+      },
+      {
+        name: '# API',
+        color: 'brown'
+      },
+      {
+        name: '# DOM',
+        color: 'green'
+      },
+      {
+        name: '# data science',
+        color: 'red'
+      },
+      {
+        name: '# MERN',
+        color: 'brown'
+      },
+      {
+        name: '# python',
+        color: 'green'
+      },
+      {
+        name: '# Flask',
+        color: 'red'
+      },
+      {
+        name: '# stactistics',
+        color: 'brown'
+      },
+      {
+        name: '# Linear Algebra',
+        color: 'green'
+      },
+      {
+        name: '# Numpy',
+        color: 'red'
+      },
+      {
+        name: '# pandas',
+        color: 'brown'
+      },
+      {
+        name: '# scipy',
+        color: 'green'
+      },
+      {
+        name: '# scikit - learn',
+        color: 'pink'
+      },
+      {
+        name: '# Visualization',
+        color: 'green'
+      },
+      {
+        name: '# D3.js',
+        color: 'red'
+      },
+    ]
+
+
+    keywords.forEach((keyword) => {
+      const keyEl = document.createElement('div')
+      keywordsEl.appendChild(keyEl)
+      keyEl.textContent = keywords
+      keyEl.style.display = 'grid'
+      keyEl.style.fontSize = '16px'
+      keyEl.style.fontWeight = '500'
+      keyEl.style.padding = '0.4rem 1rem'
+      keyEl.style.textAlign = 'center'
+      keyEl.style.placeItems = 'center'
+      keyEl.style.borderRadius = '1.5rem'
+
+      keyEl.style.width = 'fit-content'
+      keyEl.innerHTML = `<span>${keyword.name}</span>
+     `
+      keyEl.style.backgroundColor = keyword.color
+
+    })
+  </script>
+</body>
+
+</html>
