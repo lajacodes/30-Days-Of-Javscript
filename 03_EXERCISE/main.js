@@ -1,10 +1,10 @@
-let firstName = 'laja'; 
-let lastName = 'codes';  
-let country = 'Nigeria'; 
-let city = 'Lagos'; 
+let firstName = "laja";
+let lastName = "codes";
+let country = "Nigeria";
+let city = "Lagos";
 let age = 18;
 let isMarried = true;
-let year = 2021
+let year = 2021;
 
 console.log(firstName);
 console.log(lastName);
@@ -12,79 +12,70 @@ console.log(country);
 console.log(city);
 console.log(age);
 console.log(isMarried);
+console.log(year);
 
-console.log(typeof 'laja')
-console.log(typeof 'codes');
-console.log(typeof 'Nigeria');
-console.log(typeof'lagos'); 
-console.log(typeof 18);
+console.log(typeof firstName);
+console.log(typeof lastName);
+console.log(typeof country);
+console.log(typeof city);
+console.log(typeof age);
 console.log(typeof isMarried);
+console.log(typeof year);
 
 // console.log(typeof ('10') === 10);
-console.log(typeof parseInt ('10') === 10);
-console.log(parseInt ('9.8') === 10);
+console.log(typeof Number("10") === 10);
+console.log(parseInt("9.8") === 10);
 
-let _isLight = true
-let _isOn = true
-let _isMorning = true
+let _isLight = true;
+let _isOn = true;
+let _isMorning = true;
 console.log(_isLight);
 console.log(_isOn);
 console.log(_isMorning);
 
- let _isDark = false
- let _isOff = false
- let _isEvening = false
- console.log(_isDark);
- console.log(_isOff);
- console.log(_isEvening);
+let _isDark = false;
+let _isOff = false;
+let _isEvening = false;
+console.log(_isDark);
+console.log(_isOff);
+console.log(_isEvening);
 
- let check = 5 > 3
- let chec = 4 > 3
- let chek = 4 >= 3
- let chck = 4 < 3
- let ceck  = 4 <= 3
- let chk = 4 == 4
- let heck = 4 === 4
-  let eck = 4 != 4
-  let hec = 4 !== 4
-  let pec  =4 != '4' 
- let peck = 4 == '4'
-  let deck = 4 === '4'
- console.log(check);
- console.log(chec);
- console.log(chek);
- console.log(chck);
- console.log(chk);
- console.log(heck);
- console.log(eck);
- console.log(hec);
- console.log(pec);
- console.log(peck);
- console.log(deck);
- console.log('phython'.length == "jargon".length);
+console.log(5 > 3);
+console.log(4 > 3);
+console.log(4 >= 3);
+console.log(4 < 3);
+console.log(4 <= 3);
+console.log(4 == 4);
+console.log(4 === 4);
+console.log(4 != 4);
+console.log(4 !== 4);
+console.log(4 != "4");
+console.log(4 == "4");
+console.log(4 === "4");
 
-   console.log(4 > 3 && 10 < 12); //true         
-   console.log(4 > 3 && 10 > 12); // false
-   console.log(4 > 3 || 10 < 12); //true
-   console.log(4 > 3 || 10 > 12); //true
-   console.log(!(4 > 3));//false
-   console.log(!(4 < 3));//true
-   console.log(!(false));//true
-   console.log(!(4 > 3 && 10 < 12));//false
-   console.log(!(4 > 3 && 10 > 12));//true
-   console.log(!(4 === '4'));//true
-   console.log('dragon'.includes !== 'python'.includes);
+console.log("phython".length !== "jargon".length);
 
-   const now = new Date()
-   console.log(now.getFullYear())
-   console.log(now.getMonth()+1)
-   console.log(now.getDate());
-   console.log(now.getDay());
-   console.log(now.getHours());
-   console.log(now.getMinutes());
-   console.log(now.getTime());
+console.log(4 > 3 && 10 < 12); //true
+console.log(4 > 3 && 10 > 12); // false
+console.log(4 > 3 || 10 < 12); //true
+console.log(4 > 3 || 10 > 12); //true
+console.log(!(4 > 3)); //false
+console.log(!(4 < 3)); //true
+console.log(!false); //true
+console.log(!(4 > 3 && 10 < 12)); //false
+console.log(!(4 > 3 && 10 > 12)); //true
+console.log(!(4 === "4")); //true
+console.log("dragon".includes !== "python".includes);
 
-   
+const now = new Date();
+console.log(now.getFullYear());
+console.log(now.getMonth() + 1);
+console.log(now.getDate());
+console.log(now.getDay());
+console.log(now.getHours());
+console.log(now.getMinutes());
+console.log(now.getTime());
+
 //    let height = prompt("Enter Height");
 //    let base = prompt("Enter Base");
 //    let area = 0.5 * height * base;
@@ -111,12 +102,17 @@ console.log(_isMorning);
 //    let circumference = (2 * PI * radius)
 //    console.log(circumference);
 
-let xone = 1
-let yone = 0
-let xtwo = 0
-let ytwo =-2
-let secondSlope =((ytwo-yone)/(xtwo-xone));
-console.log(secondSlope); 
+// let Hours = parseInt(prompt("Enter hour"));
+// let perHour = parseInt(prompt("Enter perhour"));
+// const allEarning = Hours * perHour;
+// console.log(allEarning);
+
+let xone = 1;
+let yone = 0;
+let xtwo = 0;
+let ytwo = -2;
+let secondSlope = (ytwo - yone) / (xtwo - xone);
+console.log(secondSlope);
 
 // let x1 = 2;
 // let y1 = 2;
@@ -134,60 +130,60 @@ console.log(secondSlope);
 // console.log(x1 ** 2 + 6*x1 + 9);
 // let y = 0
 
+let _myName = "goodnesslaja";
+_myName.length > 7
+  ? console.log("ur name is long")
+  : console.log("ur name is short");
 
- let _myName = 'good';
- if (_myName.length > 7) {
-    console.log('my name is long');
- } else {console.log('my name is short');
-}
-   
+let _firstName = "Asabenah";
+let _lastName = "Yetayeh";
+_firstName.length !== _lastName.length
+  ? console.log(
+      `Your first name, ${_firstName} is longer than your family name, ${_lastName}`
+    )
+  : "";
 
- let _firstName = 'Asabenah'
-  let _lastName = 'Yetayehh'
-  console.log(_firstName.lenght !== _lastName.lenght);
+// let myAge = 18;
+// let yourAge = 10;
+// let myAgeyourAge = 18 - 10;
+// myAgeyourAge ? console.log(`i am ${myAgeyourAge} years older than you`) : "";
 
-let myAge = 18
-let yourAge = 10
-let myAgeyourAge = 18 -10;
- console.log(parseInt(18 - 10));
-console.log(`i am ${myAgeyourAge} years older than you`);
+// let birthYear = Number(prompt("Enter birth year"));
+// let recentAge = 2021 - birthYear;
+// if (recentAge >= 18) {
+//   console.log(`You are ${recentAge}. You are old enough to drive`);
+// }
 
-// let birthYear = (prompt('Enter birth year'));
-//  let Age = 18
-//     if (Age >= 18) {console.log('You are 25. You are old enough to drive')
-        
-//     }
-// let _birthYear = (prompt('Enter birth year'));
-//  let _Age = 18
-//     if (Age <= 18) {console.log('You are 15. You will be allowed to drive after 3 years.')
-        
-//     }
+// let smallBirth = Number(prompt("Enter birth year"));
+// let simpleAge = 2021 - smallBirth;
+// if (simpleAge <= 18) {
+//   console.log(
+//     `You are ${simpleAge}.You will be allowed to drive after ${
+//       18 - simpleAge
+//     } years.`
+//   );
+// }
 
-/*let numberOfYears = (prompt('Enter number of years you live'))
- let _now = new Date()
-console.log(_now.getTime());*/
+// let numberOfYears = prompt("Enter number of years you live");
+// let getTime = Date.now();
+// console.log(getTime);
 
+//  let _now = new Date()
+// console.log(_now.getTime());*/
 
+const days = now.getDay();
+const years = now.getFullYear();
+const month = now.getMonth() + 1;
+const hours = now.getHours();
+const minutes = now.getMinutes();
 
-const days = now.getDay()
-const years = now.getFullYear() 
-const month = now.getMonth() + 1  
-const hours = now.getHours() 
-const minutes = now.getMinutes() 
+console.log(`${years}-${month}-${days}-${hours}:${minutes}`);
+console.log(`${days}-${month}-${year}-${hours}:${minutes}`);
+console.log(`${days}/${month}/${years}/${hours}:${minutes}`);
 
-
-console.log(`${years}-${month}-${days}-${hours}:${minutes}`)
-console.log(`${days}-${month}-${year}-${hours}:${minutes}`)
-console.log(`${days}/${month}/${years}/${hours}:${minutes}`)
-
-
-
-const _years = now.getFullYear()
-const _month = now.getMonth() + 1
-const day = now.getDay()
-const hour = now.getHours()
-const minute = now.getMinutes()
-console.log(`${year}/${month}/${days} ${hours}:${minutes}`)
-
-
-
+const _years = now.getFullYear();
+const _month = now.getMonth() + 1;
+const day = now.getDay();
+const hour = now.getHours();
+const minute = now.getMinutes();
+console.log(`${year}/${month}/${days} ${hours}:${minutes}`);
